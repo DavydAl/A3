@@ -1,0 +1,25 @@
+ion-card {
+  border-radius: 10px;
+  background-color: white;
+  text-align: initial;
+  font-weight: bold;
+}
+
+ion-card-title {
+  text-align: center;
+}
+
+.eu {
+  margin: 5% 0;
+  width: 100%;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ion-icon {
+  zoom: 3.5
+}

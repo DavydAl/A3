@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-input type="text" name="resultado" value="{{ resultado }}" disabled></ion-input>
+
+  <ion-button (click)="montarResultado('0')" type="ion-button" class="btn btn-info btn-lg btn-block">
+    0
+  </ion-button>
+
+  <ion-button (click)="montarResultado('1')" type="ion-button" class="btn btn-info btn-lg btn-block">
+    1
+  </ion-button>
+
+
+
+  <ion-button type="ion-button" (click)="montarResultado('+')" class="btn btn-dark btn-lg btn-block">
+    +
+  </ion-button>
+
+  <ion-button type="ion-button" (click)="finalizar()" class="btn btn-success btn-lg btn-block">
+    =
+  </ion-button>
+
+  <ion-button (click)="limpar()" type="ion-button" class="btn btn-danger btn-lg btn-block">
+    CE
+  </ion-button>
+
+
+</ion-content>
